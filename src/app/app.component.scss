@@ -1,0 +1,125 @@
+.todo-container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 360px;
+    height: 480px;
+    border-radius: 14px;
+    padding: 12px;
+    font-family: Verdana,
+        sans-serif;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+    .todo-header{
+        font-size: 32px;
+        font-weight: 500;
+        margin: 20px auto 40px 40px;
+    }
+
+    .todo-items-container{
+    
+        .todo-item{
+        padding: 12px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+        font-weight: 300;
+        cursor: pointer;
+        }
+
+        .checkbox{
+            background-color: white;
+            margin-right: 10px;
+        }
+
+        .delete-item-button{
+            border-radius: 22px;
+            font-size: 14px;
+            padding: 10px 18px;
+            margin-left: 10px;
+            background-color: white;
+            border: 1px solid black;
+            user-select: none;
+            
+            cursor: pointer;
+            
+            &:hover {
+                background-color: #a80507;
+                color: white;
+            }
+
+            &:active{
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .todo-add-item-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        input {
+            border: 1px solid lightgrey;
+            border-radius: 22px;
+            padding: 14px 10px;
+            width: 100%;
+
+
+            &:focus-visible {
+                outline: 1px solid rgb(95, 23, 29);
+            }
+        }
+
+        .add-item-button {
+            border-radius: 22px;
+            align-self: center;
+            padding: 14px 16px;
+            font-size: 14px;
+            margin-left: 10px;
+            background-color: white;
+            border: 1px solid black;
+            user-select: none;
+
+            cursor: pointer;
+
+            &:hover {
+                background-color: #d89375;
+            }
+            
+            &:active {
+                opacity: 0.6;
+            }
+
+        }
+    }
+
+    .todo-footer{
+        display: flex;
+        justify-content: center;
+        
+        
+        .clear-button{
+            border-radius: 22px;
+            font-size: 14px;
+            padding: 10px 18px;
+            margin-top: 20px;
+            background-color: white;
+            border: 1px solid black;
+            user-select: none;
+            
+            cursor: pointer;
+
+            &:hover {
+                background-color: #d8ba74;
+            }
+            
+            &:active {
+                opacity: 0.7;
+            }
+        }
+    }
+}
